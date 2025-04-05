@@ -1,0 +1,28 @@
+/* Smartphone schon fertig da mobil first*/
+@media only screen and (max-width:575px){
+  /* bereits vorbereitet da desktop first */
+  .slider_wrapper{
+    height:400px;
+  }
+  .slider_wrapper a div{
+    float:none;
+    width: 100%;
+    height:60%;
+  }
+  .slider_wrapper a p{
+    position:relative;
+    width: 100%;
+    height:40%;
+  }
+}
+
+/* Tablett Ansicht */
+@media only screen and (min-width:576px) and (max-width:921px){
+    /* hier alles für Tablett Ansicht */
+  
+}
+/* Desktop */
+@media only screen and (min-width:922px) { /* ab 1400 wrapper */
+    /* hier alles für Desktop Ansicht */
+ 
+}
