@@ -19,6 +19,21 @@ document.addEventListener('DOMContentLoaded', function() {
         monthSelect.addEventListener('change', populateDays);
         yearSelect.addEventListener('change', populateDays);
     }
+
+    // Lazy Loading Images
+    const lazyImages = document.querySelectorAll('img[data-src]');
+    
+    const imageObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const img = entry.target;
+                img.src = img.dataset.src;
+                observer.unobserve(img);
+            }
+        });
+    });
+
+    lazyImages.forEach(img => imageObserver.observe(img));
 });
 
 // Funktion zum Befüllen der Tage basierend auf Monat und Jahr
