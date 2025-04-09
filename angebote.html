@@ -1,14 +1,174 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content=" Angebote und Events für Kleinkind, Jugendliche/r oder Sportschwimmer/-in: Schwimmkurse, Aqua-Fitness, Events im Hallenbad und Freibad.">
-    <title>Angebote und Events im Schwimmbad für Kinder, Jugendliche und Erwachsene</title>
+        content="Angebote und Events für Kleinkind, Jugendliche/r oder Sportschwimmer/-in: Schwimmkurse, Aqua-Fitness, Events im Hallenbad und Freibad.">
+    <title>Angebote im Hallenbad und Freibad für Kinder, Jugenliche und Erwachsene</title>
+    <script src="js/jquery.js"></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
 </head>
+
 <body>
-    
+    <header class="header">
+        <nav aria-label="Hauptnavigation">
+            <a href="index.html" class="logo-link">
+                <img src="img/schwimmspass-logo.svg" id="logo-img" alt="Logo der Schwimmspaß GmbH">
+            </a>
+            <ul class="main-nav">
+                <li><a href="news.html">News</a></li>
+                <li><a href="angebote.html">Angebote + Events</a></li>
+                <li><a href="oeffnungszeiten-preise.html">Öffnungszeiten + Preise</a></li>
+                <li><a href="#kontakt-footer">Kontakt</a></li>
+            </ul>
+            <button class="burgermenue" aria-label="Menü öffnen">
+                <img src="img/menu.svg" alt="">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="content-section">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>Paddeln, Prusten, Tauchen, Springen, Schwimmen</h2>
+                        <p>
+                            Ermöglichen Sie sich und Ihrem Kind Freude und Sicherheit im nassen Element – von der Wassergewöhnung für die Allerkleinsten über das Seepferdchen-Abzeichen vor dem Schulanfang bis zur Wassergymnastik für die Älteren. Machen Sie sich und Ihre Kinder fit für die Wasserwelt. Wir bieten Schwimm- und Aquakurse für alle Altersgruppen und Klassen.
+                        </p>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/daumen_hoch.webp" alt="Kinder zeigen begeistert Daumen hoch am Beckenrand">
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>I. Unsere Angebote für Kinder und Jugendliche</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><a href="seepferdchen.html">Babyschwimmen</a></li>
+                            <li><a href="seepferdchen.html">Wassergewöhnungskurse</a></li>
+                            <li><a href="seepferdchen.html">Ferienkurse Sommer</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/babyschwimmen.webp" alt="Babyschwimmen, Kind am Arm im Wasser">
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>II. Schwimmabzeichen für Kinder und Jugendliche</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><a href="seepferdchen.html">Vorbereitung Seepferdchen (ab 4 Jahre)</a></li>
+                            <li><a href="jugend.html">Schwimmabzeichen Bronze (7–14 Jahre)</a></li>
+                            <li><a href="jugend.html">Schwimmabzeichen Silber (7–14 Jahre)</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/seepferdchen.webp" alt="Seepferdchen, Kind beim Tauchen">
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>III. Unsere Angebote für die ganze Familie</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><a href="kindergeburtstag.html">Kindergeburtstag feiern</a></li>
+                            <li><a href="kindergeburtstag.html">Schwimmtanz und Wasserspiele</a></li>
+                            <li><a href="filmnacht.html">Filmnacht für Familien</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/schwimmtanz.webp" alt="Schwimmtanz im Becken">
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>IV. Unsere Angebote für Erwachsene</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><a href="kindergeburtstag.html">Schwimmkurs Einstieg</a></li>
+                            <li><a href="seepferdchen.html">Schwimmkurs Stilschwimmen</a></li>
+                            <li><a href="seepferdchen.html">Schwimmkurs Leistungsgruppe</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/leistung.webp" alt="Schwimmerin schwimmt auf Zeit">
+                    </div>
+                </div>
+            </section>
+
+            <section class="content-section">
+                <h2>V. Unsere Angebote im Fitnessbereich</h2>
+                <div class="content-grid">
+                    <div class="content-text">
+                        <ul>
+                            <li><a href="aqua-fitness.html">Aqua-Fitness</a></li>
+                            <li><a href="seepferdchen.html">Wasser-Rehabilitation</a></li>
+                            <li><a href="seepferdchen.html">Wassergymnastik klassisch</a></li>
+                            <li><a href="kindergeburtstag.html">Wassergymnastik in der Schwangerschaft</a></li>
+                            <li><a href="seepferdchen.html">Wassergymnastik für Übergewichtige</a></li>
+                            <li><a href="seepferdchen.html">Aquafit spezial: Joggen und Krafttraining</a></li>
+                        </ul>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/aqua-fitness.webp" alt="Erwachsene in verschiedenen Altersklassen machen zusammen Aqua-Fitness">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" id="kontakt-footer">
+                    <h3>Kontakt</h3>
+                    <p>Schwimmspaß GmbH<br>
+                        Badstraße 5<br>
+                        50555 Wasserland</p>
+                    <p>Tel: 0011/2200-0<br>
+                        E-Mail: <a href="mailto:info@schwimmspass-wasserland.de"
+                            class="footer-link">info@schwimmspass-wasserland.de</a></p>
+                </div>
+                <div class="footer-info" id="oeffnungszeiten-footer">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Freibadsaison 2023:<br>
+                        Von Donnerstag, 18. Mai bis Ende September</p>
+                    <p>Mo, Di, Mi, Fr, So: 10 Uhr bis 18 Uhr<br>
+                        Do und Sa: 10 Uhr bis 21:30 Uhr</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Innenbereich</h3>
+                    <p>Frühschwimmer: 6 Uhr bis 9 Uhr<br>
+                        Mo, Di, Mi, Fr, So: 9 Uhr bis 19 Uhr<br>
+                        Do und Sa: 10 Uhr bis 22 Uhr</p>
+                </div>
+                <div class="footer-info">
+                    <ul class="footer-list">
+                        <li><a href="impressum.html" class="footer-link">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="footer-link">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kindergeburtstag im Schwimmbad feiern - Mit Animation, Wasserballspielen und leckerer Bewirtung. Jetzt im Schwimmspaß Wasserland buchen!">
+    <title>Kindergeburtstag feiern im Schwimmbad - Schwimmspaß GmbH</title>
+    <script src="js/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <link rel="shortcut icon" href="img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
+</head>
+
+<body>
+    <header class="header">
+        <nav aria-label="Hauptnavigation">
+            <a href="index.html" class="logo-link">
+                <img src="img/schwimmspass-logo.svg" id="logo-img" alt="Logo der Schwimmspaß GmbH">
+            </a>
+            <ul class="main-nav">
+                <li><a href="news.html">News</a></li>
+                <li><a href="angebote.html">Angebote + Events</a></li>
+                <li><a href="#oeffnungszeiten-footer">Öffnungszeiten + Preise</a></li>
+                <li><a href="#kontakt-footer">Kontakt</a></li>
+            </ul>
+            <button class="burgermenue" aria-label="Menü öffnen">
+                <img src="img/menu.svg" alt="">
+            </button>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <section class="content-section">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>Kindergeburtstag feiern</h2>
+                        <p>Stellen Sie Ihre Wunschliste zusammen und wir machen Ihnen ein Preisangebot. Sie können zwischen drei Animationen wählen:</p>
+                        <ul>
+                            <li>Altersgerechte Wasserballspiele</li>
+                            <li>Nach verborgenen Schätzen tauchen</li>
+                            <li>Spielerisches Wettschwimmen</li>
+                        </ul>
+                        <p>Außerdem gibt es ein Programm mit oder ohne Fotobegleitung, mit oder ohne Bewirtung. Informieren Sie uns, wie viele Kinder und wie viele Erwachsene an dem Event teilnehmen werden. Und besprechen Sie mit uns Ihren Lieblingstermin.</p>
+                    </div>
+                    <div class="content-image">
+                        <img src="img/kindergeburtstag.webp" alt="Kinder feiern zusammen Geburtstag im Freibad">
+                    </div>
+                </div>
+            </section>
+
+            <section id="formular" class="content-section">
+                <div class="content-grid">
+                    <div class="content-image">
+                        <img src="img/kinderparty.webp" alt="Kinder trinken Getränke bei einem Kindergeburtstag im Schwimmbad">
+                    </div>
+                    <div class="content-text">
+                        <h2>Meine Wunschliste für den Kindergeburtstag:</h2>
+                        <form class="form-container" action="mailto:info@schwimmspass-wasserland.de" method="post">
+                            <!-- Animation Auswahl -->
+                            <div class="form-group">
+                                <h3>Animation:</h3>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" id="mit-animation" name="animation" value="mit">
+                                        Mit Animation
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="ohne-animation" name="animation" value="ohne">
+                                        Ohne Animation, selbstgestaltet
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Animationen wählen -->
+                            <div class="form-group animation-options">
+                                <h3>Animationen wählen:</h3>
+                                <div class="checkbox-group">
+                                    <label>
+                                        <input type="checkbox" id="altersgerechte-wasserballspiele" name="animationen[]" value="wasserballspiele">
+                                        Altersgerechte Wasserballspiele
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="verborgene-schaetze" name="animationen[]" value="schaetze">
+                                        Nach verborgenen Schätzen tauchen
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="spielerisches-wettschwimmen" name="animationen[]" value="wettschwimmen">
+                                        Spielerisches Wettschwimmen
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" id="fotobegleitung" name="animationen[]" value="foto">
+                                        Mit Fotobegleitung
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Bewirtung -->
+                            <div class="form-group">
+                                <h3>Bewirtung:</h3>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" id="mit-bewirtung" name="bewirtung" value="mit">
+                                        Mit Bewirtung (Sie erstellen das Menü)
+                                    </label>
+                                    <label>
+                                        <input type="radio" id="ohne-bewirtung" name="bewirtung" value="ohne">
+                                        Ohne Bewirtung
+                                    </label>
+                                </div>
+                            </div>
+
+                            <!-- Bewirtung Optionen -->
+                            <div class="form-group bewirtung-options">
+                                <div class="form-flex">
+                                    <div class="form-column">
+                                        <h4>Essen:</h4>
+                                        <div class="checkbox-group">
+                                            <label>
+                                                <input type="checkbox" id="pommes" name="essen[]" value="pommes">
+                                                Pommes
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="wuerstchen" name="essen[]" value="wuerstchen">
+                                                Würstchen
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="vegetarisches-wuerstchen" name="essen[]" value="vegetarisches-wuerstchen">
+                                                Vegetarisches Würstchen
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="schnitzel" name="essen[]" value="schnitzel">
+                                                Schnitzel
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="vegetarischer-bratling" name="essen[]" value="vegetarischer-bratling">
+                                                Vegetarischer Bratling
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="spaghetti-mit-tomatensosse" name="essen[]" value="spaghetti">
+                                                Spaghetti mit Tomatensoße
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                    <div class="form-column">
+                                        <h4>Getränke:</h4>
+                                        <div class="checkbox-group">
+                                            <label>
+                                                <input type="checkbox" id="wasser-still" name="getraenke[]" value="wasser-still">
+                                                Wasser (still)
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="wasser-medium" name="getraenke[]" value="wasser-medium">
+                                                Wasser (medium)
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="apfelsaft" name="getraenke[]" value="apfelsaft">
+                                                Apfelsaft
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="orangensaft" name="getraenke[]" value="orangensaft">
+                                                Orangensaft
+                                            </label>
+                                            
+                                            <p class="limo-label">Limonaden:</p>
+                                            <label>
+                                                <input type="checkbox" id="zitrone" name="getraenke[]" value="zitrone">
+                                                Zitrone
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="orange" name="getraenke[]" value="orange">
+                                                Orange
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="himbeere" name="getraenke[]" value="himbeere">
+                                                Himbeere
+                                            </label>
+                                            <label>
+                                                <input type="checkbox" id="waldmeister" name="getraenke[]" value="waldmeister">
+                                                Waldmeister
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personenanzahl -->
+                            <div class="form-group">
+                                <h3>Personenanzahl:</h3>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <input type="number" name="kinder" required>
+                                        <label>Anzahl Kinder*</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="number" name="erwachsene" required>
+                                        <label>Anzahl Erwachsene*</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Persönliche Angaben -->
+                            <div class="form-group">
+                                <h3>Angaben zur Person:</h3>
+                                <div class="form-field">
+                                    <select name="anrede" required>
+                                        <option value="" disabled selected>Anrede</option>
+                                        <option value="frau">Frau</option>
+                                        <option value="herr">Herr</option>
+                                        <option value="divers">Divers</option>
+                                    </select>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-field">
+                                        <input type="text" name="vorname" required>
+                                        <label>Vorname*</label>
+                                    </div>
+                                    <div class="form-field">
+                                        <input type="text" name="name" required>
+                                        <label>Nachname*</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Wunschtermin -->
+                            <div class="form-group">
+                                <h3>Wunschtermin:</h3>
+                                <div class="form-row date-select">
+                                    <div class="form-field">
+                                        <select name="tag" required>
+                                            <option value="" disabled selected>Tag</option>
+                                            <!-- Wird dynamisch befüllt -->
+                                        </select>
+                                    </div>
+                                    <div class="form-field">
+                                        <select name="monat" required>
+                                            <option value="" disabled selected>Monat</option>
+                                            <option value="1">Januar</option>
+                                            <option value="2">Februar</option>
+                                            <option value="3">März</option>
+                                            <option value="4">April</option>
+                                            <option value="5">Mai</option>
+                                            <option value="6">Juni</option>
+                                            <option value="7">Juli</option>
+                                            <option value="8">August</option>
+                                            <option value="9">September</option>
+                                            <option value="10">Oktober</option>
+                                            <option value="11">November</option>
+                                            <option value="12">Dezember</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-field">
+                                        <select name="jahr" required>
+                                            <option value="" disabled selected>Jahr</option>
+                                            <option value="2025">2025</option>
+                                            <option value="2026">2026</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Kontaktdaten -->
+                            <div class="form-group">
+                                <div class="form-field">
+                                    <input type="email" name="email" required>
+                                    <label>E-Mail*</label>
+                                </div>
+                                <div class="form-field">
+                                    <input type="tel" name="telefon" required>
+                                    <label>Telefonnummer*</label>
+                                </div>
+                            </div>
+
+                            <p class="form-note">*Pflichtfeld</p>
+
+                            <div class="form-submit">
+                                <button type="submit" class="btn">Absenden</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-info" id="kontakt-footer">
+                    <h3>Kontakt</h3>
+                    <p>Schwimmspaß GmbH<br>
+                        Badstraße 5<br>
+                        50555 Wasserland</p>
+                    <p>Tel: 0011/2200-0<br>
+                        E-Mail: <a href="mailto:info@schwimmspass-wasserland.de"
+                            class="footer-link">info@schwimmspass-wasserland.de</a></p>
+                </div>
+                <div class="footer-info" id="oeffnungszeiten-footer">
+                    <h3>Öffnungszeiten</h3>
+                    <p>Freibadsaison 2025:<br>
+                        Von Donnerstag, 18. Mai bis Ende September</p>
+                    <p>Mo, Di, Mi, Fr, So: 10 Uhr bis 18 Uhr<br>
+                        Do und Sa: 10 Uhr bis 21:30 Uhr</p>
+                </div>
+                <div class="footer-info">
+                    <h3>Innenbereich</h3>
+                    <p>Frühschwimmer: 6 Uhr bis 9 Uhr<br>
+                        Mo, Di, Mi, Fr, So: 9 Uhr bis 19 Uhr<br>
+                        Do und Sa: 10 Uhr bis 22 Uhr</p>
+                </div>
+                <div class="footer-info">
+                    <ul class="footer-list">
+                        <li><a href="impressum.html" class="footer-link">Impressum</a></li>
+                        <li><a href="datenschutz.html" class="footer-link">Datenschutz</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script>
+        // JavaScript für das Formular
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animation ein-/ausblenden
+            const mitAnimation = document.getElementById('mit-animation');
+            const ohneAnimation = document.getElementById('ohne-animation');
+            const animationOptions = document.querySelector('.animation-options');
+
+            function toggleAnimation() {
+                if (mitAnimation.checked) {
+                    animationOptions.style.display = 'block';
+                } else {
+                    animationOptions.style.display = 'none';
+                }
+            }
+
+            mitAnimation.addEventListener('change', toggleAnimation);
+            ohneAnimation.addEventListener('change', toggleAnimation);
+
+            // Bewirtung ein-/ausblenden
+            const mitBewirtung = document.getElementById('mit-bewirtung');
+            const ohneBewirtung = document.getElementById('ohne-bewirtung');
+            const bewirtungOptions = document.querySelector('.bewirtung-options');
+
+            function toggleBewirtung() {
+                if (mitBewirtung.checked) {
+                    bewirtungOptions.style.display = 'block';
+                } else {
+                    bewirtungOptions.style.display = 'none';
+                }
+            }
+
+            mitBewirtung.addEventListener('change', toggleBewirtung);
+            ohneBewirtung.addEventListener('change', toggleBewirtung);
+
+            // Initial verstecken
+            animationOptions.style.display = 'none';
+            bewirtungOptions.style.display = 'none';
+        });
+    </script>
+</body>
+
+</html>
